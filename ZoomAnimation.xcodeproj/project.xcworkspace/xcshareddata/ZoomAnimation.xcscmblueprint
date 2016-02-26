@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "73877865BAFDBC3A05738BE10CF71B5F972290A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "73877865BAFDBC3A05738BE10CF71B5F972290A0" : 0,
+    "C82EAFF6181FB7275C6C083AFB602C57A21912C6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D4B16686-4677-4531-B63B-32E313DEB1DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "73877865BAFDBC3A05738BE10CF71B5F972290A0" : "ZoomAnimation\/",
+    "C82EAFF6181FB7275C6C083AFB602C57A21912C6" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZoomAnimation",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZoomAnimation.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yusayusa\/ZoomAnimation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "73877865BAFDBC3A05738BE10CF71B5F972290A0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:eure\/eureka-tech-blog.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C82EAFF6181FB7275C6C083AFB602C57A21912C6"
+    }
+  ]
+}
