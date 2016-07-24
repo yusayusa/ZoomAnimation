@@ -78,6 +78,8 @@ class TransitionController: NSObject, UIViewControllerAnimatedTransitioning {
         containerView.addSubview(sourceImageView)
         
         toVC.view.alpha = 0.0
+        (toVC as! DetailViewController).imageView!.hidden = true
+        (toVC as! DetailViewController).image = sourceImageView.image
         
         UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.05, options: .CurveEaseInOut, animations: { () -> Void in
             
@@ -92,7 +94,8 @@ class TransitionController: NSObject, UIViewControllerAnimatedTransitioning {
             toVC.view.alpha = 1.0
             
             }) { (finished) -> Void in
-
+                (toVC as! DetailViewController).imageView?.hidden = false
+                sourceImageView.removeFromSuperview()
                 // アニメーション終了
                 transitionContext.completeTransition(true)
         }
@@ -112,9 +115,6 @@ class TransitionController: NSObject, UIViewControllerAnimatedTransitioning {
         guard let containerView = transitionContext.containerView() else {
             return
         }
-
-        // 最初からcontainerViewがsubviewとして持っているfromVC.viewを削除
-        fromVC.view.removeFromSuperview()
         
         // toView -> fromViewの順にaddSubview
         containerView.addSubview(toVC.view)
@@ -136,7 +136,7 @@ class TransitionController: NSObject, UIViewControllerAnimatedTransitioning {
             
             }) { (finished) -> Void in
                 
-                sourceImageView.hidden = true
+                sourceImageView.removeFromSuperview()
                 
                 (toVC as? ViewController)?.selectedImageView?.hidden = false
 

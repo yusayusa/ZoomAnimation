@@ -31,6 +31,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
+        self.imageView!.image = self.image
     }
     
     func createImageView() -> UIImageView? {
@@ -38,11 +39,11 @@ class DetailViewController: UIViewController {
         guard let detailImageView = self.imageView else {
             return nil
         }
-        let imageView = UIImageView(image: self.image)
+        let imageView = UIImageView(image: self.imageView!.image)
         imageView.contentMode = .ScaleAspectFit
         imageView.frame = detailImageView.frame
         return imageView
     }
     
-    @IBOutlet private weak var imageView : UIImageView?
+    @IBOutlet var imageView : UIImageView?
 }
